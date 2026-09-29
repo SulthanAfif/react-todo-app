@@ -1,16 +1,49 @@
-# React + Vite
+# React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React Todo App adalah aplikasi daftar tugas (to-do list) modern yang dibangun menggunakan React dan Vite. Aplikasi ini memungkinkan pengguna untuk mengelola tugas sehari-hari dengan fitur yang lebih lengkap dibanding to-do list sederhana, seperti prioritas, kategori, tanggal, pencarian, dan dark mode. Project ini cocok sebagai latihan transisi dari Vanilla JavaScript ke React, karena konsep yang sama (CRUD + localStorage) dibuat ulang dengan pendekatan component-based.
 
-Currently, two official plugins are available:
+## Fitur
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Tambah Tugas : Menambah tugas baru dengan teks, prioritas, kategori, dan tanggal
+- Edit Tugas : Mengubah isi, prioritas, kategori, dan tanggal (double-click atau tombol edit)Centang SelesaiMenandai tugas sudah dikerjakan
+- Hapus Tugas : Menghapus satu tugas atau semua yang sudah selesai
+- Prioritas : Tinggi (merah), Sedang (kuning), Rendah (hijau)
+- Kategori : Work, Personal, Study, Health, Lainnya
+- Tanggal : Bisa menambahkan deadlinePencarianMencari berdasarkan nama tugas atau kategori
+- Filter : Semua / Aktif / Selesai
+- Dark Mode : Mode gelap yang tersimpan otomatis
+- localStorage : Data tidak hilang saat di-refresh
+- ResponsiveTampil baik di HP dan desktop
 
-## React Compiler
+## Cara Menjalankan
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+# Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React 18 → Library UI
+- Vite → Build tool modern (sangat cepat)
+- CSS Biasa → Styling tanpa framework
+- localStorage → Penyimpanan data di browser
+
+# Struktur Folder
+
+```
+react-todo-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── TodoForm.jsx      → Form tambah tugas
+│   │   ├── TodoList.jsx      → Daftar tugas
+│   │   └── TodoItem.jsx      → Satu item tugas
+│   ├── App.jsx               → Komponen utama (state management)
+│   ├── App.css               → Styling
+│   ├── index.css             → Reset CSS
+│   └── main.jsx              → Entry point
+├── index.html
+├── package.json
+└── README.md
+```
