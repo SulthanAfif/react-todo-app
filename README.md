@@ -2,6 +2,9 @@
 
 React Todo App adalah aplikasi daftar tugas (to-do list) modern yang dibangun menggunakan React dan Vite. Aplikasi ini memungkinkan pengguna untuk mengelola tugas sehari-hari dengan fitur yang lebih lengkap dibanding to-do list sederhana, seperti prioritas, kategori, tanggal, pencarian, dan dark mode. Project ini cocok sebagai latihan transisi dari Vanilla JavaScript ke React, karena konsep yang sama (CRUD + localStorage) dibuat ulang dengan pendekatan component-based.
 
+## Live Demo
+https://react-todo-app-rho-amber.vercel.app/
+
 ## Fitur
 
 - Tambah Tugas : Menambah tugas baru dengan teks, prioritas, kategori, dan tanggal
